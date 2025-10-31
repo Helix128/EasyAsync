@@ -11,10 +11,10 @@
 #include <freertos/task.h>
 #include <freertos/semphr.h>
 
-// #define ASYNC_DEBUG 1
+#define ASYNC_DEBUG 1
 
 #ifdef ASYNC_DEBUG
-    #define ASYNC_LOG(fmt, ...) Serial.printf("[ASYNC] " fmt "\n", ##__VA_ARGS__)
+    #define ASYNC_LOG(fmt, ...) Serial.printf("[EasyAsync] " fmt "\n", ##__VA_ARGS__)
 #else
     #define ASYNC_LOG(fmt, ...)
 #endif
